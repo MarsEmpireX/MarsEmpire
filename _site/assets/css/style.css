@@ -355,7 +355,7 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
 /* Responsive */
 @media (max-width: 768px) { .hero-content h1 { font-size: 2.2rem; }
   .hero-content p { font-size: 1rem; }
-  .hero-overlay { max-width: 100%; } }
+  .hero-overlay { width: 90%; max-width: 420px; } }
 a { color: #000000; text-decoration: underline; /* optional */ }
 
 a:hover, a:focus { color: #ff0030; /* darker red on hover for better contrast */ text-decoration: underline; /* optional */ }
