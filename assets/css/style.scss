@@ -359,3 +359,93 @@ h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 1;
 }
+
+.social-buttons {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+// .social-btn {
+//   width: 48px;
+//   height: 48px;
+//   border-radius: 50%;
+//   background: rgba(255,255,255,0.1);
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transition: all 0.25s ease;
+// }
+
+// .social-btn img {
+//   width: 22px;
+//   height: 22px;
+//   filter: brightness(0) invert(1); /* MONOCHROME */
+//   opacity: 0.9;
+// }
+
+/* Hover effect */
+// .social-btn:hover {
+//   background: #ff0030;
+//   transform: translateY(-3px);
+// }
+
+/* SOCIAL BUTTONS */
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+  text-decoration: none !important;
+}
+
+.social-btn img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s ease;
+}
+
+/* Hover effect */
+.social-btn:hover {
+  background: #ff0030;
+  transform: translateY(-3px);
+}
+
+.social-btn:hover img {
+  transform: scale(1.1);
+}
+
+.social-buttons-section {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.social-buttons-section h3 {
+  font-family: 'Marcellus', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #FF0030;
+}
+
+.social-btn.group {
+  background: #FF0030 /*rgba(255,0,48,0.85);  Mars Empire red for groups */
+}
+
+.social-btn.group:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
