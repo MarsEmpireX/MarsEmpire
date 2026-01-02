@@ -93,7 +93,7 @@ html, body {
     font-size: 1rem;
   }
   .hero-overlay {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
 
@@ -161,4 +161,157 @@ body {
   border-color: #ff0030;
   color: #fff;
   transform: translateY(-2px);
+}
+
+.join-hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-image: url("{{ '/assets/img/hero-bg.jpg' | relative_url }}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+
+  h1 {
+    font-family: 'Alta', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+}
+
+.join-form-section {
+  text-align: center;
+  padding: 2rem 1rem;
+
+  form, iframe {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  input, button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    background-color: #FF0030;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background-color: #cc0025;
+  }
+
+  .privacy-note {
+    font-size: 0.9rem;
+    color: #555;
+  }
+}
+
+.join-socials {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f8f8f8;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .social-links a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #111;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+
+  .social-links a:hover {
+    background: #FF0030;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .join-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .join-hero p {
+    font-size: 1rem;
+  }
+
+  .join-socials .social-links a {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+.join-banner {
+  width: 100vw;
+  height: 15vh; /* adjust height */
+  background-image: url("{{ '/assets/png/banner.png' | relative_url }}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+
+// /* Optional dark overlay */
+// .join-banner::before {
+//   content: "";
+//   position: absolute;
+//   inset: 0;
+//   background: rgba(0, 0, 0, 0.45);
+//   z-index: 1;
+// }
+
+/* Text on banner */
+.join-banner-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.join-banner-content h1 {
+  font-family: 'Alta', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.join-banner-content p {
+  font-size: 1.2rem;
+}
+
+/* 🔥 Allow full-width sections on Join page */
+.full-width-page {
+  width: 100vw;
+}
+
+/* Remove Cayman padding for join page */
+.full-width-page section {
+  padding-left: 0;
+  padding-right: 0;
 }
