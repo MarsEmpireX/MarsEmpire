@@ -1,5 +1,3 @@
-# MarsEmpire
+# [MarsEmpire.co](http://www.MarsEmpire.co/) 
 
-WE RULE THE UNIVERSE ⭕️
-
-https://marsempire.co/
+🔴 WE RULE THE UNIVERSE ⭕️
