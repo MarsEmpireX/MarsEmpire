@@ -328,7 +328,7 @@ html, body { margin: 0; padding: 0; height: 100%; width: 100%; }
 .main-content { margin: 0; padding: 0; }
 
 /* Fullscreen hero background */
-.hero { position: relative; margin: 0; padding: 0; min-height: 100vh; /* minimum viewport height */ height: 100vh; /* force exact viewport height */ width: 100vw; /* force full width */ /* Background image */ background-image: url("/assets/png/background.png"); background-size: cover; /* COVER the entire container */ background-position: center; /* keep center visible */ background-repeat: no-repeat; /* Flex to center content */ display: flex; flex-direction: column; min-height: 100vh; align-items: center; justify-content: center; text-align: center; }
+.hero { position: relative; z-index: 1; margin: 0; padding: 0; min-height: 100vh; /* minimum viewport height */ height: 100vh; /* force exact viewport height */ width: 100vw; /* force full width */ /* Background image */ background-image: url("/assets/png/background.png"); background-size: cover; /* COVER the entire container */ background-position: center; /* keep center visible */ background-repeat: no-repeat; /* Flex to center content */ display: flex; flex-direction: column; min-height: 100vh; align-items: center; justify-content: center; text-align: center; }
 
 .hero-content { display: flex; flex-direction: column; /* stack overlay, text, button */ align-items: center; gap: 1rem; /* spacing between items */ text-align: center; padding: 1rem 2rem; z-index: 2; margin-bottom: 5px; }
 
@@ -468,4 +468,16 @@ h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", "Open Sans", Arial, sans-ser
 .social-btn:hover img { opacity: 1; transform: scale(1.1); }
 
 /* Socials overlay */
-.hero-socials { position: absolute; justify-content: center; flex-wrap: nowrap; left: 50%; bottom: 10%; /* ← move up/down (20% from bottom) */ margin-top: 15vh; /* 15% of viewport height between CTA and socials */ transform: translateX(-50%); z-index: 5; display: flex; flex-direction: column; gap: 18px; z-index: 2; align-items: center; }
+.hero-socials { position: absolute; justify-content: center; flex-wrap: nowrap; left: 50%; bottom: 10%; /* ← move up/down (20% from bottom) */ margin-top: 15vh; /* 15% of viewport height between CTA and socials */ transform: translateX(-50%); z-index: 20; display: flex; flex-direction: column; gap: 18px; align-items: center; }
+
+.site-footer { position: absolute; /* if you want it over hero background */ bottom: 0; left: 0; width: 100%; z-index: 10; background: transparent; padding: 60px 20px; text-align: center; border-top: none; color: white !important; }
+
+.site-footer a { color: white !important; text-decoration: none; transition: color 0.2s ease; }
+
+.social-buttons-wrapper { margin-bottom: 20px; /* space above credits */ display: flex; justify-content: center; gap: 16px; z-index: 20; }
+
+.site-footer { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10; background: transparent; padding: 60px 20px 40px; /* extra bottom for spacing */ text-align: center; border-top: none; color: white; }
+
+.site-footer a { color: white; text-decoration: none; }
+
+.site-footer a:hover { color: #FF0030 !important; text-decoration: underline; pointer-events: auto; /* links inside footer remain clickable */ }
