@@ -476,7 +476,7 @@ h1, h2, h3, h4, h5, h6 { font-family: "Montserrat", "Open Sans", Arial, sans-ser
 
 .social-buttons-wrapper { margin-bottom: 20px; /* space above credits */ display: flex; justify-content: center; gap: 16px; z-index: 20; }
 
-.site-footer { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10; background: transparent; padding: 60px 20px 40px; /* extra bottom for spacing */ text-align: center; border-top: none; color: white; }
+.site-footer { position: absolute; bottom: 0; left: 0; width: 100%; z-index: 10; background: transparent; padding: 20px 20px 40px; /* extra bottom for spacing */ text-align: center; border-top: none; color: white; }
 
 .site-footer a { color: white; text-decoration: none; }
 
