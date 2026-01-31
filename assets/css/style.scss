@@ -22,8 +22,10 @@ html, body {
   margin: 0;
   padding: 0;
 
-  min-height: 100vh;   /* minimum viewport height */
-  height: 100vh;       /* force exact viewport height */
+  min-height: 100svh;  /* safe viewport height */
+  height: 100svh;
+  // min-height: 100vh;   /* minimum viewport height */
+  // height: 100vh;       /* force exact viewport height */
   width: 100vw;        /* force full width */
 
   /* Background image */
@@ -481,6 +483,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 20px;
     height: 20px;
   }
+
+  .site-footer {
+    position: relative;
+    margin-top: 2rem;
+  }
+
+  .hero-socials {
+    bottom: 16vh;  /* extra space for mobile browser UI */
+  }
 }
 
 .social-buttons {
@@ -491,9 +502,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-footer {
-  padding: 60px 20px;
-  background: #000;
-  text-align: center;
+  position: relative;   /* or static */
+  bottom: auto;
+  left: auto;
+  z-index: auto;
 }
 
 .footer-socials {
@@ -528,19 +540,10 @@ h1, h2, h3, h4, h5, h6 {
 /* Socials overlay */
 .hero-socials {
   position: absolute;
-  justify-content: center;
-  flex-wrap: nowrap; 
-
   left: 50%;
-  bottom: 10%; /* ← move up/down (20% from bottom) */
-  margin-top: 15vh; /* 15% of viewport height between CTA and socials */
   transform: translateX(-50%);
+  bottom: 12vh;     /* responsive spacing */
   z-index: 20;
-
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: center;
 }
 
 .site-footer {
